@@ -34,14 +34,17 @@ app.get('/tnx', (req, res) => {
 //Send message to telegram
 app.use(bodyParser.urlencoded({ extended: true }))
 app.post('/', function(req, res) {
-  const optionalParams = {
-    parse_mode: 'HTML'
-  }
+  const optionalParams = {parse_mode: 'HTML'}
   bot.telegram.sendMessage(config.TELEGRAM.userid, `Заявка с сайта!
 <b>ФИО:</b> ${req.body.firstname}
 <b>Телефон:</b> ${req.body.telephone}
 <b>Промокод:</b> ${req.body.promo}`, optionalParams)
   res.render('tnx')
+})
+
+//If bot error
+bot.catch((err) => {
+  console.log('Ooops', err)
 })
 
 const port = 4000
