@@ -1,0 +1,314 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext);
+
+html,body {
+	height:100%;
+	margin:0;
+}
+
+* {
+	font-family: 'Roboto Condensed', 'Roboto', Helvetica, sans-serif;
+	color: #fff;
+}
+
+h1 {
+	line-height: 1;
+}
+
+h3 {
+	line-height: 1;
+	margin: 10px 0 40px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+nav {
+	width: 100%;
+	height: 62px;
+	position: fixed;
+	top: 0px;
+	background: #0C0000;
+	z-index: 100;
+}
+
+nav .menu {
+	padding: 20px 0;
+}
+
+nav .logo {
+	float: left;
+}
+
+nav .email {
+	float: right;
+}
+
+nav .email a {
+	margin-left: 20px;
+}
+
+.full-scr {
+	height:100%;
+	min-height:100%;
+}
+
+#one {
+	background: url(../img/header-1.jpg);
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#one .container {
+	height: 100%;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-left {
+  width: 100%;
+}
+
+.flex-center {
+  width: 50%;
+}
+
+#one .links {
+	margin-top: 40px;
+}
+
+#one .btn {
+	margin-right: 20px;
+}
+
+.btn {
+	border: 2px solid #fff;
+	padding: 10px 30px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+a.btn:hover {
+	background: #fff;
+	color: #0C0000;
+}
+
+#two {
+	background: #f3f3f3;
+}
+
+#two .col-3 {
+	text-align: center;
+	color: #222;
+}
+
+#two * {
+	color: #0C0000;
+}
+
+.mainpadd {
+	padding: 70px 0;
+}
+
+#three, #five {
+	background: #0C0000;
+}
+
+#three .col-4 {
+	text-align: center;
+	position: relative;
+}
+
+#three img {
+	width: 100%;
+}
+
+#three .flexbox:hover {
+  outline: 3px solid white;
+  outline-offset: -20px;
+}
+
+#three .btn {
+	margin: 0;
+}
+
+#three .flexbox:hover {
+	background: rgba(0, 0, 0, 0.85);
+}
+
+#three .flexbox .flex-left {
+	display: none;
+}
+
+#three .flexbox:hover .flex-left {
+	display: block;
+}
+
+#three .flexbox {
+	position: absolute;
+	top: 0;
+}
+
+
+.acvl {
+	background: url(../img/acvl.png);
+}
+
+#four * {
+	color: #0C0000;
+}
+
+#five {
+	background: url(../img/contact-bg.jpg) center center;
+	background-size: cover;
+}
+
+#five .sendbox {
+	text-align: center;
+}
+
+#four img {
+	filter: grayscale(1);
+}
+
+#four img:hover {
+	filter: grayscale(0);
+	cursor: pointer;
+}
+
+#four .col-2 {
+	text-align: center;
+}
+
+#five .btn:hover {
+	box-shadow: 0 0 10px #c5a47e;
+}
+
+.form-control:focus {
+	box-shadow: 0 0 5px #fff;
+}
+
+.form-control {
+	padding: 10px 20px;
+	border-radius: 25px;
+	border: 2px solid #efefef;
+	width: 100%;
+	color: #0C0000;
+	font-size: 14px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-sizing: border-box;
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#five button.btn {
+	background: #c5a47e;
+	border-color: #c5a47e;
+	color: #0C0000;
+	width: 100%;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#five .mainpadd {
+	padding: 100px 0;
+}
+
+.text-center{
+	text-align: center;
+}
+
+footer {
+	background: #0C0000;
+	height: 20px;
+	padding: 10px 0;
+}
+
+.copyright {
+	float: left;
+}
+
+.social {
+	float: right;
+}
+
+button:focus, input:focus {
+    outline:none;
+}
+
+@media (min-width: 768px) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.desktop-only {
+		display: none;
+	}
+
+	#three .container {
+		width: 100%;
+	}
+
+	#three .col-4 {
+		margin: 0;
+	}
+}
+
+.superbutton img {
+	display: none;
+}
+
+.spbut b {
+	display: none;
+}
+
+.spbut {
+    padding: 4px 7px !important;
+    width: 25% !important;
+} 
+
+.spbut img {
+	display: block;
+	margin-top: 2px;
+	height: 34px;
+}
+
+.whatsapp {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	background: #6bbb00;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 10;
+}
+
+.whatsapp .text{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #579800;
+}
+
+.whatsapp .text:before {
+	background-image: url(../img/wa.png);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	content: "";
+}
