@@ -32,8 +32,12 @@ nav {
 	height: 62px;
 	position: fixed;
 	top: 0px;
-	background: #0C0000;
+	background: transparent;
 	z-index: 100;
+}
+
+.bg-black {
+	background: #0C0000;
 }
 
 nav .menu {
@@ -42,6 +46,7 @@ nav .menu {
 
 nav .logo {
 	float: left;
+	margin-top: -10px;
 }
 
 nav .email {
@@ -201,13 +206,7 @@ a.btn:hover {
 	text-align: center;
 }
 
-#five .btn:hover {
-	box-shadow: 0 0 10px #c5a47e;
-}
 
-.form-control:focus {
-	box-shadow: 0 0 5px #fff;
-}
 
 .form-control {
 	padding: 10px 20px;
@@ -225,13 +224,14 @@ a.btn:hover {
 }
 
 #five button.btn {
-	background: #c5a47e;
-	border-color: #c5a47e;
-	color: #0C0000;
 	width: 100%;
 	cursor: pointer;
 	text-transform: uppercase;
-	font-weight: bold;
+}
+
+#five button.btn:hover {
+	background: transparent;
+	color: #f9f32f;
 }
 
 #five .mainpadd {
@@ -329,7 +329,7 @@ button:focus, input:focus {
 	color: #000;
 }
 
-#apps img, #two img {
+#apps img, #two img, #mobile-apps img {
 	width: 100%;
 }
 
@@ -337,7 +337,7 @@ button:focus, input:focus {
 	width: 65%;
 }
 
-#apps a.btn {
+#apps a.btn, #mobile-apps a.btn{
 	line-height: 5;
 	color: #000;
 	border: 2px solid #f9f32f;
@@ -352,15 +352,29 @@ button:focus, input:focus {
 	color: #000;
 }
 
-#apps a.link:before {
+#apps a.link:before, #mobile-apps a.link:before {
 	content: "";
 	display: inline-flex;
-	background: url(../img/eye.svg) no-repeat;
+	background: url(../img/eye.png) no-repeat;
 	width: 22px;
-	height: 13px;
+	height: 14px;
 	margin: 3px 4px 0 0;
-	opacity: 0.2;
+	opacity: 0.3;
 	padding-bottom: 3px;
+}
+
+#mobile-apps {
+	background: #0C0000;
+}
+
+#mobile-apps  a.btn:hover {
+	color: #f9f32f;
+}
+
+.count {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 0 5px 0 0 !important;
 }
 
 @media (max-width: 576px) {
@@ -377,4 +391,8 @@ button:focus, input:focus {
 	.mobile-center {
 		text-align: center;
 	}
+}
+
+.lit-padd {
+	padding: 20px 0;
 }
