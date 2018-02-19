@@ -38,6 +38,7 @@ app.post('/', function(req, res) {
   bot.telegram.sendMessage(config.TELEGRAM.userid, `Заявка с сайта!
 <b>ФИО:</b> ${req.body.firstname}
 <b>Телефон:</b> ${req.body.telephone}
+<b>Email:</b> ${req.body.email}
 <b>Промокод:</b> ${req.body.promo}`, optionalParams)
   res.render('tnx')
 })
